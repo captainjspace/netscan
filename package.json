@@ -1,0 +1,35 @@
+{
+  "name": "scanner",
+  "version": "1.0.0",
+  "private": false,
+  "description": "",
+  "main": "dist/scanner.js",
+  "bin": {
+    "scanner": "./bin/scanner.js"
+  },
+  "scripts": {
+    "clean-logs": "pnpm -w run logs",
+    "scan": "sudo node src/scanner.mjs",
+    "addconf": " ",
+    "start": "scanner",
+    "build": "tsc",
+    "lint": ""
+  },
+  "keywords": [
+    "nmap",
+    "tcpdump",
+    "scan",
+    "network",
+    "localnet"
+  ],
+  "author": "Joshua Landman <joshua.s.landman@gmail.com> (https://www.rollingblackoutband.com)",
+  "license": "MIT",
+  "packageManager": "pnpm@12.6.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "oxlint": "^1.85.0",
+    "tar": "^7.5.22",
+    "typescript": "^7.0.2"
+  }
+}
